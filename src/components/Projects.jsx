@@ -8,9 +8,8 @@ const GHIcon = () => (
     </svg>
 )
 
-function ProjectCard({ icon, title, desc, tech, ghLink, accuracy, category, visible }) {
+function ProjectCard({ icon, title, desc, tech, ghLink, accuracy, category }) {
     const ref = useReveal()
-    if (!visible) return null
     return (
         <div className="project-card glass-card reveal" ref={ref} data-category={category}>
             <div className="project-card-top">
@@ -67,11 +66,10 @@ export default function Projects() {
                 </div>
 
                 <div className="projects-grid">
-                    {PROJECTS.map((project, i) => (
+                    {PROJECTS.filter(project => activeFilter === 'all' || project.category === activeFilter).map((project) => (
                         <ProjectCard
-                            key={i}
+                            key={project.title}
                             {...project}
-                            visible={activeFilter === 'all' || project.category === activeFilter}
                         />
                     ))}
                 </div>

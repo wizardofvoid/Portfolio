@@ -21,7 +21,7 @@ export const TYPED_PHRASES = [
 
 export const STATS = [
     { value: '9.02', label: 'CGPA' },
-    { value: '4+', label: 'Projects' },
+    { value: '8+', label: 'Projects' },
     { value: '1', label: 'Internship' },
     { value: 'VIT', label: 'University' },
 ];
@@ -86,32 +86,60 @@ export const PROJECTS = [
     {
         icon: '📄', category: 'ml',
         title: 'Resume Feedback System',
-        desc: 'NLP-powered resume analyzer that scores resumes against ATS criteria, provides keyword-based gap analysis, and generates actionable improvement suggestions.',
+        desc: 'ATS Score Tracker & Resume Feedback System Using NLP and Explainable AI. Analyzes resumes against criteria and provides gap analysis.',
         tech: ['Python', 'NLP', 'Scikit-learn', 'Streamlit', 'NLTK'],
-        ghLink: 'https://github.com/wizardofvoid',
+        ghLink: 'https://github.com/wizardofvoid/Resume-Feedback-System',
     },
     {
         icon: '🫀', category: 'ml',
         title: 'Heart Disease Detection System',
-        desc: 'Predictive ML model using Logistic Regression and Random Forest achieving 88.65% accuracy. Includes feature importance visualization and model comparison dashboard.',
+        desc: 'Predictive ML model using Logistic Regression and Random Forest achieving 88.65% accuracy. Includes feature importance visualization.',
         tech: ['Python', 'Random Forest', 'Logistic Regression', 'Pandas', 'Seaborn'],
-        ghLink: 'https://github.com/wizardofvoid',
+        ghLink: 'https://github.com/wizardofvoid/heart_disease',
         accuracy: '88.65%',
     },
     {
         icon: '🎓', category: 'ml',
         title: 'Student Performance Predictor',
-        desc: 'Advanced ML pipeline combining RandomForest with LLaMA integration for natural language explanations of predicted outcomes. Achieved 94.5% accuracy.',
+        desc: 'Advanced ML pipeline combining RandomForest with LLaMA integration for natural language explanations. Achieved 94.5% accuracy.',
         tech: ['Python', 'RandomForest', 'LLaMA', 'Pandas', 'Scikit-learn'],
-        ghLink: 'https://github.com/wizardofvoid',
+        ghLink: 'https://github.com/wizardofvoid/student-performance-predictor',
         accuracy: '94.5%',
+    },
+    {
+        icon: '🥁', category: 'web',
+        title: 'DrumKit',
+        desc: 'Interactive web-based drum kit application with responsive sound triggering and visual feedback.',
+        tech: ['JavaScript', 'HTML5', 'CSS3'],
+        ghLink: 'https://github.com/wizardofvoid/DrumKit',
+    },
+    {
+        icon: '🎲', category: 'web',
+        title: 'DiceGame',
+        desc: 'A fun, interactive dice rolling game built with purely vanilla JavaScript for DOM manipulation and game logic.',
+        tech: ['JavaScript', 'HTML5', 'CSS3'],
+        ghLink: 'https://github.com/wizardofvoid/DiceGame',
+    },
+    {
+        icon: '📏', category: 'ml',
+        title: 'FeetToMeters App',
+        desc: 'Python-based unit conversion utility using the Tkinter library to create a functional desktop GUI.',
+        tech: ['Python', 'Tkinter'],
+        ghLink: 'https://github.com/wizardofvoid/FeetToMeters-app',
+    },
+    {
+        icon: '⚖️', category: 'web',
+        title: 'ListXchange',
+        desc: 'A college-specific marketplace platform similar to OLX, designed for students to exchange items and resources within the campus community.',
+        tech: ['CSS3', 'HTML5', 'JavaScript'],
+        ghLink: 'https://github.com/wizardofvoid/ListXchange',
     },
     {
         icon: '🌐', category: 'web',
         title: 'E-Learning Platform',
-        desc: 'Fully functional e-learning web platform with user authentication, course catalog, progress tracking, and responsive UI designed for seamless cross-device learning.',
+        desc: 'Fully functional e-learning web platform with user authentication, course catalog, and progress tracking.',
         tech: ['HTML', 'CSS', 'JavaScript', 'Authentication'],
-        ghLink: 'https://github.com/wizardofvoid',
+        ghLink: 'https://github.com/wizardofvoid/E-learning-Platform',
     },
 ];
 
